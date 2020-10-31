@@ -23,8 +23,20 @@
 
 function rowWeights(array){
     // Your code here!
+    
 }
 
 module.exports = {
     rowWeights
 };
+
+
+
+
+___Trying this 
+
+// Arrow functions with a single argument 
+const checkWeight = weight => { 
+    console.log(`Baggage weight : ${weight} kilograms.`); 
+  }; 
+  checkWeight(25); // Prints: Baggage weight : 25 kilograms

@@ -8,18 +8,24 @@
 function singles(arr){
     if (arr === undefined) throw new Error("array is required");
     // Your code here!
+    
     arr.sort();
-var singles = [];
-	for (i = 0; i < arr.length; i++) {
-
-      if (arr[i] == arr[i+1]) {
-		continue;
+    //var singles = [];
+    var numberAddition = 0;
+    var arrLength = arr.length
+        for (i = 0; i < arrLength; i++) {
+    
+          if (arr[i] == arr[i+1]) {
+            i++;
+        }
+        else {
+       //     singles.push(arr[i]);
+       numberAddition = numberAddition + arr[i];
+        }
+        }
+    console.log(numberAddition);
+    return numberAddition;
     }
-    else {
-    	singles.push(arr[i]);
-    }
-    }
-console.log(singles);}
 
 
 module.exports = {

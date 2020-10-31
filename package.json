@@ -20,6 +20,6 @@
   "homepage": "https://github.com/techreturners/yrtt_entry_katas_js#readme",
   "devDependencies": {
     "eslint": "^6.8.0",
-    "jest": "^25.2.4"
+    "jest": "^25.5.4"
   }
 }
