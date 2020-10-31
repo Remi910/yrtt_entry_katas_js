@@ -8,8 +8,17 @@
 function singles(arr){
     if (arr === undefined) throw new Error("array is required");
     // Your code here!
+    var singles = [];
+	for (i = 0; i < arr.length; i++) {
+	var number = arr.pop();
+	if (singles.includes(number)) {
+		continue;
+    }
+    else {
+    	singles.push(number);
+    }
 }
-
+}
 module.exports = {
     singles
 };
