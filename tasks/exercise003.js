@@ -1,8 +1,10 @@
 // Scenario
-// Several people are standing in a row divided into two teams. The first person goes into team 1, the second goes into team 2, the third goes into team 1, and so on.
+// Several people are standing in a row divided into two teams. The first person goes into team 1, the second goes into team 2, 
+//the third goes into team 1, and so on.
 
 // Task
-// Given an array of positive integers (the weights of the people), return a new array of two integers, where the first one is the total weight of team 1, and the second one is the total weight of team 2.
+// Given an array of positive integers (the weights of the people), return a new array of two integers, where the first one is
+// the total weight of team 1, and the second one is the total weight of team 2.
 
 // Notes
 // Array size is at least 1.
@@ -23,7 +25,18 @@
 
 function rowWeights(array){
     // Your code here!
-    
+    var outputArray = []; 
+    var totalWeight = 0;
+    for (i = 0; i < array.lenght; i + 2) {
+        totalWeight = totalWeight + array[i];
+    }
+   outputArray.push(totalWeight); 
+   totalWeight = 0;
+   for (i = 1; i < array.lenght; i + 2) {
+        totalWeight = totalWeight + array[i];
+    }
+    outputArray.push(totalWeight);    
+    return outputArray;       
 }
 
 module.exports = {
@@ -32,14 +45,3 @@ module.exports = {
 
 
 
-
-___Trying this 
-
-// Arrow functions with a single argument 
-const checkWeight = weight => totalWeight.team1
-const checkWeight = weight => weight.team2
-var = rowWeights([13, 27, 49])  ==>  return (62, 27)
-{ 
-    console.log(`weight : ${weight} team.`); 
-  }; 
-  checkWeight(25); // Prints: Baggage weight : 25 kilograms
