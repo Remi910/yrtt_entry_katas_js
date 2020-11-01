@@ -2,6 +2,9 @@
 
 function pigLatin(str){
     // You code here!
+    var splittedString = str.split(); 
+    splittedString.reverse();
+    return splittedString.toString() + ay++;
 }
 
 module.exports = {
@@ -9,15 +12,3 @@ module.exports = {
 };
 
 
-
-
-_________Trying this
-
-
-Reverse loop
-
-const items = ['apricot', 'banana', 'cherry'];
-
-for (let i = items.length - 1; i >= 0; i -= 1) {
-  console.log(`${i}. ${items[i]}`);
-}
