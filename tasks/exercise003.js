@@ -27,14 +27,26 @@ function rowWeights(array){
     // Your code here!
     var outputArray = []; 
     var totalWeight = 0;
-    for (i = 0; i < array.lenght; i + 2) {
+    for (i = 0; i < array.length; i++) {
         totalWeight = totalWeight + array[i];
+        if(i + 2 < array.length){
+            i++;
+        }
+        else{
+            break;
+        }
     }
    outputArray.push(totalWeight); 
    totalWeight = 0;
-   for (i = 1; i < array.lenght; i + 2) {
-        totalWeight = totalWeight + array[i];
+   for (i = 1; i < array.length; i++) {
+    totalWeight = totalWeight + array[i];
+    if(i + 2 < array.length){
+        i++;
     }
+    else{
+        break;
+    }
+}
     outputArray.push(totalWeight);    
     return outputArray;       
 }
