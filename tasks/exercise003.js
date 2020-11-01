@@ -36,7 +36,10 @@ module.exports = {
 ___Trying this 
 
 // Arrow functions with a single argument 
-const checkWeight = weight => { 
-    console.log(`Baggage weight : ${weight} kilograms.`); 
+const checkWeight = weight => totalWeight.team1
+const checkWeight = weight => weight.team2
+var = rowWeights([13, 27, 49])  ==>  return (62, 27)
+{ 
+    console.log(`weight : ${weight} team.`); 
   }; 
   checkWeight(25); // Prints: Baggage weight : 25 kilograms

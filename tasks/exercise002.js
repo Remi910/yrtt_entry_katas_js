@@ -4,8 +4,16 @@
 
 function past(h, m, s){
     // Your code here!
-}
+    var hoursElapse = 60*60*h;
+    var minutesElapse = 60*m;
+    var secondsElapse = hoursElapse + minutesElapse + s;
+    return secondsElapse * 1000;
+} 
 
 module.exports = {
     past
 };
+
+
+
+
